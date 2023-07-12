@@ -21,5 +21,6 @@ admin.site.site_header = 'Storefront Admin'
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('playground.urls')),
-    path('__debug__/', include(debug_toolbar.urls))
+    path('__debug__/', include(debug_toolbar.urls)),
+    path('apis/', include('store.urls'))
 ]
