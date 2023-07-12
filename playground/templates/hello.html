@@ -5,6 +5,11 @@
         {%else%}
         <h1>bye</h1>
         {%endif%}
+        {%for customer in customers%}
+            
+            <h5>{{customer.first_name}}</h5>
+            
+        {%endfor%}
     </body>
 </html>
 
